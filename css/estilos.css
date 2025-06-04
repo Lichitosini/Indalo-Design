@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #797167;
+    margin: 0;
+    padding: 0;
+}
+
+/*!-- Header --*/
+header {
+    background-color: #202224;
+    align-items: center;
+}
+
+nav {
+    list-style: none;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: #202224;
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #ffffff;
+    margin: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.bienvenida {
+    text-align: center;
+}
+
+.bienvenida h1 {
+    font-size: 45px;
+    color: #5f666d;
+}
+
+.bienvenida h2 {
+    font-size: 30px;
+    color: #6C757D;
+}
+
+/**-- Main --**/
+.contenido {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../multimedia/fondo-pagina.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+}
+
+.contenido h3 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.contenido h4 {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.contenido p {
+    color: #ffffff;
+    font-size: 20px;
+    justify-content: center;
+    margin: 20px;
+    text-align: center;
+}
+
+/*-- Fotos --*/
+.fotos div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fotos h3 {
+    height: 50px;
+    color: #5f666d;
+    font-size: 35px;
+    background-color: #202224;
+    text-align: center;
+}
+
+.fotos img {
+    width: 30%;
+    margin: 10px;
+    justify-content: center;
+    border: solid 2px #555050;
+}
+
+/*?-- Footer --?*/
+footer {
+    background-color: #5f666d;
+    text-align: center;
+    width: 100%;
+}
+
+footer img {
+    width: 50px;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+@media screen and (max-width: 1099px) { 
+    .contenido div p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 605px) {
+    .fotos h3 {
+        font-size: 25px;
+    }
+    .fotos img {
+        width: 25%;
+    }
+}
+@media screen and (max-width: 590px) {
+    .contenido div p {
+        font-size: 13.6px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .bienvenida h1 {
+        font-size: 30px;
+    }
+    .bienvenida h2 {
+        font-size: 20px;
+    }
+    .contenido div p {
+        font-size: 13px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    .fotos img {
+        width: 20%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .fotos h3 {
+        font-size: 20px;
+    }
+    nav ul li a {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .contenido div p {
+        font-size: 12px;
+    }
+    .bienvenida h1 {
+        font-size: 25px;
+    }
+    .bienvenida h2 {
+        font-size: 18px;
+    }
+    
+}
+@media screen and (max-width: 365px) {
+    .contenido div p {
+        font-size: 11px;
+    }
+    .bienvenida h1 {
+        font-size: 20px;
+    }
+    .bienvenida h2 {
+        font-size: 16px;
+    }
+}
