@@ -7,14 +7,14 @@
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: #797167;
+    background-color: #b6a999;
     margin: 0;
     padding: 0;
 }
 
 /*!-- Header --*/
 header {
-    background-color: #202224;
+    background-color: #272524;
     align-items: center;
 }
 
@@ -23,7 +23,7 @@ nav {
     justify-content: center;
     position: sticky;
     top: 0;
-    background-color: #202224;
+    background-color: #272524;
     height: 40px;
 }
 
@@ -35,7 +35,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #b6a999;
     margin: 20px;
     text-decoration: none;
     text-align: center;
@@ -48,12 +48,12 @@ nav ul li a {
 
 .bienvenida h1 {
     font-size: 45px;
-    color: #5f666d;
+    color: #b6a999;
 }
 
 .bienvenida h2 {
     font-size: 30px;
-    color: #6C757D;
+    color: #b6a999;
 }
 
 /**-- Main --**/
@@ -89,35 +89,26 @@ nav ul li a {
     color: #ffffff;
     font-size: 20px;
     justify-content: center;
-    margin: 20px;
+    margin: 15px;
     text-align: center;
 }
 
 /*-- Fotos --*/
-.fotos div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .fotos h3 {
     height: 50px;
-    color: #5f666d;
+    color: #b6a999;
     font-size: 35px;
-    background-color: #202224;
+    background-color: #272524;
     text-align: center;
 }
 
 .fotos img {
-    width: 30%;
-    margin: 10px;
-    justify-content: center;
     border: solid 2px #555050;
 }
 
 /*?-- Footer --?*/
 footer {
-    background-color: #5f666d;
+    background-color: #272524;
     text-align: center;
     width: 100%;
 }
@@ -132,10 +123,24 @@ footer div {
     align-items: center;
     list-style: none;
 }
+footer p {
+    color: #b6a999;
+    font-size: 20px;
+}
 
 @media screen and (max-width: 1099px) { 
     .contenido div p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 870px) {
+    .contenido div p {
         font-size: 16px;
+    }
+}
+@media screen and (max-width: 710px) {
+    .contenido div p {
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 605px) {
@@ -159,7 +164,7 @@ footer div {
         font-size: 30px;
     }
     .bienvenida h2 {
-        font-size: 20px;
+        font-size: 15px;
     }
     .contenido div p {
         font-size: 13px;
