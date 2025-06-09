@@ -18,39 +18,72 @@
             <h2 class="mb-0">Indalo Design te muestra el futuro sobre los nuevos ambientes.</h2>
         </section>
     </header>
-    <nav> <!--Menu de navegacion-->
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre Nosotros</a></li>
-            <li><a href="services.html">Servicios</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <!-- Botón responsive -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Contenido colapsable -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/about.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/services.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contact.html">Contacto</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu dropdown-menu-start custom-dropdown">
+                            <li><a class="dropdown-item" href="#">Deck WPC</a></li>
+                            <li><a class="dropdown-item" href="#">Perfil WPC</a></li>
+                            <li><a class="dropdown-item" href="#">Piso Vinilico</a></li>
+                            <li><a class="dropdown-item" href="#">Cielorraso Moderno</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <!--Contenido principal-->
-    <main>
-        <section id="Formulario">
-            <h1>Cualquier duda no dudes en comunicarte mediante este formulario.</h1>
-            <form action="/submit" method="post" id="formulario">
+    <form action="/submit" method="post" id="formulario">
+        <label for="nombre">Nombre y apellido</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
 
-                <label for="nombre">Nombre y apellido</label>
-                <input type="name" id="Nombre" name="Nombre">
+        <label for="mail">Mail</label>
+        <input type="email" id="mail" name="mail" placeholder="tuemail@ejemplo.com">
 
-                <label for="mail">Mail</label>
-                <input type="email" id="mail" name="mail">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 9 11 1234 5678">
 
-                <label for="telefono">Telefono</label>
-                <input type="tel" id="telefono" name="telefono">
+        <label for="consulta">Consultanos</label>
+        <textarea id="consulta" name="consulta" placeholder="Contanos en qué podemos ayudarte..."></textarea>
 
-                <label for="consulta">Consultanos</label>
-                <textarea id="consulta" name="consulta"></textarea>
+        <input type="text" placeholder="Calle" aria-label="City">
+        <input type="text" placeholder="Número" aria-label="Number">
+        <input type="text" placeholder="Código Postal" aria-label="ZIP">
+        <input type="text" placeholder="Provincia" aria-label="State">
 
-                <p id="consulta">Acepta los terminos y condiciones</p>
-                <input type="checkbox" name="" id="terminos-condiciones">
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-    </main>
+        <div class="terminos">
+            <input type="checkbox" id="terminos-condiciones" name="terminos-condiciones">
+            <label for="terminos-condiciones">Acepto los términos y condiciones</label>
+        </div>
+
+        <input type="submit" value="Enviar">
+    </form>
+
     <!--Pie de pagina-->
     <footer>
         <p>Indalo Design 2025. Todos los derechos reservados.</p>

@@ -18,14 +18,44 @@
             <h2 class="mb-0">Indalo Design te muestra el futuro sobre los nuevos ambientes.</h2>
         </section>
     </header>
-    <nav> <!--Menu de navegacion-->
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre Nosotros</a></li>
-            <li><a href="services.html">Servicios</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <!-- Botón responsive -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Contenido colapsable -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/about.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/services.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contact.html">Contacto</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu dropdown-menu-start custom-dropdown">
+                            <li><a class="dropdown-item" href="#">Deck WPC</a></li>
+                            <li><a class="dropdown-item" href="#">Perfil WPC</a></li>
+                            <li><a class="dropdown-item" href="#">Piso Vinilico</a></li>
+                            <li><a class="dropdown-item" href="#">Cielorraso Moderno</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <!--Contenido principal-->
     <main>
