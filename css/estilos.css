@@ -34,6 +34,9 @@ nav div ul li a {
     color: #b6a999;
 }
 
+.navbar-toggler {
+    background-color: #b6a999 !important;
+}
 
 .bienvenida {
     text-align: center;
@@ -50,7 +53,9 @@ nav div ul li a {
 }
 
 /**-- Main --**/
-.contenido {
+.beneficios {
+    padding: 4rem 1rem;
+    text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -60,36 +65,62 @@ nav div ul li a {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 600px;
+    height: 400px;
 }
 
-.contenido h3 {
-    text-align: center;
+.beneficios h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
     color: #ffffff;
-    font-size: 20px;
-    justify-content: center;
 }
 
-.contenido h4 {
-    color: #ffffff;
-    font-size: 20px;
-    margin: 20px;
-    text-align: center;
-    justify-content: center;
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.contenido p {
-    color: #ffffff;
-    font-size: 20px;
-    justify-content: center;
-    margin: 15px;
-    text-align: center;
+.beneficio-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.beneficio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.beneficio-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #1f1f1f;
+}
+
+.beneficio-card p {
+    font-size: 1rem;
+    color: #555;
 }
 
 .productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1rem;
+    align-items: stretch;
+    justify-items: center;
+}
+
+.card-body {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+}
+
+.card-text {
+    flex-grow: 1;
 }
 
 #formulario {
@@ -101,7 +132,6 @@ nav div ul li a {
     padding: 30px;
     background-color: #272524;
     color: #ffffff;
-    border-radius: 10px;
 }
 
 #formulario input[type="text"],
@@ -111,7 +141,6 @@ nav div ul li a {
     width: 100%;
     padding: 10px;
     border: none;
-    border-radius: 5px;
     background-color: #3a3937;
     color: white;
 }
@@ -133,7 +162,6 @@ nav div ul li a {
     padding: 12px;
     background-color: #4caf50;
     border: none;
-    border-radius: 5px;
     color: white;
     cursor: pointer;
 }
@@ -148,6 +176,7 @@ nav div ul li a {
     align-items: center;
     gap: 10px;
 }
+
 .contacto {
     display: flex;
     justify-content: center;
@@ -155,6 +184,7 @@ nav div ul li a {
     flex-direction: column;
     padding: 20px;
 }
+
 /*-- Fotos --*/
 .fotos h3 {
     height: 50px;
@@ -167,6 +197,7 @@ nav div ul li a {
 .fotos img {
     border: solid 2px #555050;
 }
+
 .fotos-galeria {
     display: grid;
     justify-content: center;
@@ -175,12 +206,14 @@ nav div ul li a {
     grid-template-rows: 2fr 2fr;
     gap: 10px;
 }
+
 .fotos-galeria img {
     width: 100%;
     height: 500px;
     object-fit: cover;
     border-radius: 10px;
 }
+
 /*?-- Footer --?*/
 footer {
     background-color: #272524;
@@ -204,9 +237,46 @@ footer p {
     font-size: 20px;
 }
 
-@media screen and (max-width: 1099px) {
+@media screen and (max-width: 1200px) {
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 14rem !important;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1106px) {
     .contenido div p {
         font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .card {
+        width: 13rem !important;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .card {
+        width: 12rem !important;
+    }
+
+    .card p {
+        font-size: 14px;
     }
 }
 
@@ -216,10 +286,45 @@ footer p {
     }
 }
 
+@media screen and (max-width: 850px) {
+    .card {
+        width: 11rem !important;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .card {
+        width: 10rem !important;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 710px) {
     .contenido div p {
         font-size: 14px;
     }
+
+    .card {
+        width: 9rem !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        place-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 15rem !important;
+    }
+
 }
 
 @media screen and (max-width: 605px) {
@@ -262,6 +367,10 @@ footer p {
     .fotos img {
         width: 20%;
     }
+
+    .card {
+        width: 12rem !important;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -271,6 +380,12 @@ footer p {
 
     nav ul li a {
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .card {
+        width: 11rem !important;
     }
 }
 
@@ -289,6 +404,16 @@ footer p {
 
 }
 
+@media screen and (max-width: 372px) {
+    .card {
+        width: 10rem !important;
+    }
+
+    .card p {
+        font-size: 11px;
+    }
+}
+
 @media screen and (max-width: 365px) {
     .contenido div p {
         font-size: 11px;
@@ -300,6 +425,16 @@ footer p {
 
     .bienvenida h2 {
         font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .card {
+        width: 9rem !important;
+    }
+
+    .card p {
+        font-size: 10px;
     }
 }
 
