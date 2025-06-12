@@ -65,7 +65,7 @@ nav div ul li a {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 400px;
+    height: 550px;
 }
 
 .beneficios h2 {
@@ -112,6 +112,7 @@ nav div ul li a {
     gap: 1rem;
     align-items: stretch;
     justify-items: center;
+    margin-top: 20px;
 }
 
 .card-body {
@@ -123,21 +124,46 @@ nav div ul li a {
     flex-grow: 1;
 }
 
+.btn {
+    background-color: #272524;
+    color: #b6a999;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #b6a999;
+    color: white;
+    transition: 0, 3;
+}
+
 #formulario {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     max-width: 800px;
     margin: auto;
+    ;
     padding: 30px;
     background-color: #272524;
     color: #ffffff;
 }
 
-#formulario input[type="text"],
+#formulario input[type="name"],
 #formulario input[type="email"],
 #formulario input[type="tel"],
 #formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    grid-column: span 2;
+    background-color: #3a3937;
+    color: white;
+}
+
+#formulario input[type="text"] {
     width: 100%;
     padding: 10px;
     border: none;
@@ -185,6 +211,70 @@ nav div ul li a {
     padding: 20px;
 }
 
+.hero-about {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+    background-color: #27252463;
+    border-radius: 10px;
+    ;
+}
+
+.hero-izquierda {
+    width: 50%;
+}
+
+.hero-derecha {
+    width: 50%;
+}
+
+.map-section {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.map-container {
+    height: 400px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.servicios h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.servicios p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.servicios ul {
+    list-style: none;
+    text-align: center;
+}
+
+.servicios ul li h4 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    color: #b6a999;
+    background-color: #272524;
+}
+
 /*-- Fotos --*/
 .fotos h3 {
     height: 50px;
@@ -209,9 +299,17 @@ nav div ul li a {
 
 .fotos-galeria img {
     width: 100%;
-    height: 500px;
+    height: 36rem;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.servicios img {
+    width: 100%;
+    height: 34rem;
+    object-fit: cover;
+    border-radius: 10px;
+    border: solid 2px #555050;
 }
 
 /*?-- Footer --?*/
@@ -230,6 +328,14 @@ footer div {
     justify-content: space-around;
     align-items: center;
     list-style: none;
+}
+
+footer div a {
+    color: #b6a999;
+}
+
+footer div a:hover {
+    color: #ffffff;
 }
 
 footer p {
@@ -257,6 +363,12 @@ footer p {
 @media screen and (max-width: 1106px) {
     .contenido div p {
         font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    .beneficios-grid {
+        grid-template-columns: 1fr 1fr
     }
 }
 
@@ -324,7 +436,6 @@ footer p {
     .card {
         width: 15rem !important;
     }
-
 }
 
 @media screen and (max-width: 605px) {
@@ -344,6 +455,10 @@ footer p {
 
     nav ul li a {
         font-size: 16px;
+    }
+
+    .fotos-galeria img {
+        height: 20rem;
     }
 }
 
@@ -381,11 +496,29 @@ footer p {
     nav ul li a {
         font-size: 12px;
     }
+
+    .hero-about {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 430px) {
     .card {
         width: 11rem !important;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .beneficio-card {
+        padding: 1rem;
+    }
+
+    .beneficio-card h3 {
+        font-size: 1rem;
+    }
+
+    .beneficio-card p {
+        font-size: 0.9rem;
     }
 }
 
@@ -402,6 +535,9 @@ footer p {
         font-size: 18px;
     }
 
+    .hero-about {
+        font-size: 11px;
+    }
 }
 
 @media screen and (max-width: 372px) {
