@@ -312,6 +312,40 @@ nav div ul li a {
     border: solid 2px #555050;
 }
 
+.imagenes-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.imagenes-galeria img {
+    width: calc(33.333% - 1rem);
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.imagenes-galeria img:hover {
+    transform: scale(1.02);
+}
+
+.galeria-section h1 {
+    background-color: #272524a2;
+    color: #b6a999;
+    text-align: center;
+}
+
+.galeria-section p {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
 /*?-- Footer --?*/
 footer {
     background-color: #272524;
@@ -343,6 +377,7 @@ footer p {
     font-size: 20px;
 }
 
+/*!-- Responsive --*/
 @media screen and (max-width: 1200px) {
     .productos {
         display: grid;
@@ -379,6 +414,12 @@ footer p {
 
     .card p {
         font-size: 13px;
+    }
+}
+
+@media (max-width: 900px) {
+    .imagenes-galeria img {
+        width: calc(50% - 1rem);
     }
 }
 
@@ -435,6 +476,18 @@ footer p {
 
     .card {
         width: 15rem !important;
+    }
+    .galeria-section h1 {
+        font-size: 30px;
+    }
+    .galeria-section p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .imagenes-galeria img {
+        width: 100%;
     }
 }
 
