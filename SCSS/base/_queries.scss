@@ -1,0 +1,382 @@
+@media screen and (max-width: 1200px) {
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) !important;
+        place-items: center;
+        gap: 10px;
+    }
+    .card {
+        width: 16rem !important;
+    p {
+        font-size: 16px;
+    }
+    }
+}
+
+@media screen and (max-width: 1106px) {
+    .contenido {
+        div {
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+    .card {
+        width: 15rem !important;
+        p {
+            font-size: 15px;
+        }
+    }
+}
+@media screen and (max-width: 1020px) {
+    .card {
+        width: 14rem !important;
+        p {
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width: 985px) {
+    .beneficios-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .card {
+        width: 13rem !important;
+        p {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .imagenes-galeria img {
+        width: calc(50% - 1rem) !important;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .card {
+        width: 12rem !important;
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .contenido div p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .card {
+        width: 11rem !important;
+    }
+    .galeria-section {
+        h1 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .card {
+        width: 10rem !important;
+        p {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .contenido div p {
+        font-size: 14px;
+    }
+        .productos {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(2, 1fr) !important;
+        place-items: center;
+        gap: 20px;
+    }
+    .card {
+        width: 15rem !important;
+        p {
+            font-size: 13px;
+        }
+    }
+    .galeria-section {
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .galeria-section  {
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .fotos {
+        h3 {
+            font-size: 25px;
+        }
+        img {
+            width: 25%;
+        }
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .contenido {
+        div {
+            p {
+                font-size: 13.6px;
+            }
+        }
+    }
+    nav {
+        ul {
+            li {
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .fotos-galeria {
+        img {
+            height: 20rem;
+        }
+    }
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        }
+        .card {
+            width: 13rem !important;
+        }
+        .galeria-section {
+            h1 {
+                font-size: 28px;
+            }
+            p {
+                font-size: 15px !important;
+            }
+        }
+    }
+
+@media screen and (max-width: 500px) {
+    .bienvenida {
+        h1 {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 15px;
+        }
+    }
+    .contenido {
+        div {
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+    nav {
+        ul {
+            li {
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .fotos {
+        h3 {
+            font-size: 20px;
+        }
+        img {
+            width: 20%;
+        }
+    }
+    .card {
+        width: 11rem !important;
+    }
+}
+
+@media screen and (max-width: 496px) {
+    .beneficios-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .beneficio-card {
+        padding: 1rem;
+        h3 {
+        font-size: 1rem;
+        }
+        p {
+        font-size: 0.9rem;
+        }
+    }
+    .imagenes-galeria img {
+        width: 12rem !important;
+    }
+}
+
+@media screen and (max-width: 464px) {
+    .card {
+        width: 10rem !important;
+    }
+    .imagenes-galeria img {
+        width: 11rem !important;
+    }
+}
+
+@media screen and (max-width: 450px) { 
+    nav {
+        ul {
+            li {
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .hero-about {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 432px) {
+    .card {
+        width: 11rem !important;
+        p {
+            font-size: 12px;
+        }
+    }
+    .bienvenida {
+        h1 {
+            font-size: 35px !important;
+        }
+        h2 {
+            font-size: 22px !important;
+        }   
+    }
+        .imagenes-galeria img {
+        width: 10rem !important;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .beneficios-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contenido {
+        div {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+    .bienvenida {
+        h1 {
+            font-size: 25px !important;
+        }
+        h2 {
+        font-size: 16px !important;
+        }
+    }
+    .hero-about {
+        font-size: 11px !important;
+    }
+    .imagenes-galeria img {
+        width: calc(50% - 0.5rem) !important;
+    }
+}
+
+@media screen and (max-width: 372px) {
+    .card {
+        width: 10rem !important;
+        p {
+        font-size: 11px;
+        }
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .contenido {
+        div {
+            p {
+                font-size: 11px;
+            }
+        }
+    }
+    .bienvenida {
+        h1 {
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 16px;
+        }
+    }
+        .imagenes-galeria img {
+        width: 8rem !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .card {
+        width: 9rem !important;
+        p {
+        font-size: 10px;
+        }
+    }
+    .bienvenida {
+        h1 {
+            font-size: 18px !important;
+        }
+        h2 {
+            font-size: 14px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 336px) {
+    .imagenes-galeria {
+        padding: 0;
+        img {
+        width: 7rem !important;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #formulario {
+        grid-template-columns: 1fr;
+    }
+    label,
+    textarea,
+    input[type="submit"],
+    .terminos {
+        grid-column: span 1 !important;
+    }
+}
