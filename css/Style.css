@@ -7,8 +7,6 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: #b6a999;
-  margin: 0;
-  padding: 0;
 }
 
 header {
@@ -51,8 +49,6 @@ nav div ul li a {
 .beneficios {
   padding: 4rem 1rem;
   text-align: center;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   background-image: url(../multimedia/fondo-pagina.jpg);
   background-position: center;
@@ -63,16 +59,21 @@ nav div ul li a {
   height: 550px;
 }
 .beneficios h2 {
+  background-color: rgba(39, 37, 36, 0.6352941176);
+  display: inline-block;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  padding: 0 10px;
+  margin-bottom: 0;
   color: #ffffff;
 }
 
 .beneficios-grid {
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
   max-width: 1000px;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -269,7 +270,7 @@ nav div ul li a {
   justify-content: center;
   align-items: center;
   grid-template-columns: 2fr 2fr;
-  grid-template-rows: 2fr 2fr;
+  grid-template-rows: 80vh 80vh;
   gap: 10px;
   margin: 10px;
 }
@@ -340,7 +341,7 @@ footer div a:hover {
 }
 footer p {
   color: #b6a999;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 1200px) {
