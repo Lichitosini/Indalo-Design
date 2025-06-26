@@ -1,35 +1,55 @@
-.beneficios {
-    padding: 4rem 1rem;
-    text-align: center;
-    flex-direction: column;
-    background-image: url(../multimedia/fondo-pagina.jpg);
+.hero-indalo {
+    background-image: url('../multimedia/fondo-pagina.jpg');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    height: 550px;
+    height: 100%;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.bg-highlight {
+    background-color: #b6a999;
+    color: #272524;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.beneficios {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     h2 {
         background-color: #272524a2;
         display: inline-block;
         font-size: 2rem;
         padding: 0 10px;
-        margin-bottom: 0;
+        margin-bottom: 10px;
         color: #ffffff;
+        border-radius: 10px;
     }
 }
 
-.beneficios-grid {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-    max-width: 1500px;
-    place-items: center;
-    height: 100%;
-    margin: 0 auto;
-}
+    .beneficios-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        place-items: center;
+        margin: 0 auto;
+    }
+
 
 .beneficio-card {
     background: white;
@@ -56,6 +76,7 @@
         color: #555;
     }
 }
+
 
 .productos {
     display: grid;
