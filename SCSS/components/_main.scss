@@ -1,10 +1,11 @@
 .hero-indalo {
-    background-image: url('../multimedia/fondo-pagina.jpg');
+    background-image: url(../multimedia/fondo-pagina.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
     align-items: center;
+    display: grid;
 }
 
 .hero-overlay {
@@ -23,33 +24,36 @@
     border-radius: 6px;
 }
 
-.beneficios {
+.beneficios{
     margin-top: 40px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100%;
 
     h2 {
         background-color: #272524a2;
         display: inline-block;
         font-size: 2rem;
         padding: 0 10px;
-        margin-bottom: 10px;
+        margin-bottom: 0;
         color: #ffffff;
         border-radius: 10px;
     }
 }
 
-    .beneficios-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-        max-width: 1200px;
-        place-items: center;
-        margin: 0 auto;
-    }
-
+.beneficios-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 1500px;
+    height: 100%;
+    margin: 20px auto;
+    place-items: center;
+}   
 
 .beneficio-card {
     background: white;
@@ -389,7 +393,7 @@
 }
 
 .ubicacion-box {
-    background-color: #ffffff;
+    background-color: #272524b4;
     border-radius: 12px;
     padding: 40px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -407,7 +411,7 @@
 
 .ubicacion-texto i {
     font-size: 40px;
-    color: #272524;
+    color: #d8d2ca;
     margin-bottom: 10px;
     display: inline-block;
 }
@@ -415,19 +419,19 @@
 .ubicacion-texto h3 {
     font-size: 28px;
     margin-bottom: 10px;
-    color: #272524;
+    color: #d8d2ca;
 }
 
 .ubicacion-texto p {
     font-size: 16px;
-    color: #555;
+    color: #d8d2ca;
     margin: 0;
 }
 
 .ubicacion-mapa {
-    flex: 1 1 500px;
+    flex: 1 1 600px;
     min-height: 300px;
-    height: 100%;
+    height: 80px;
 }
 
 .ubicacion-mapa iframe {

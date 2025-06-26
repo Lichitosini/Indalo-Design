@@ -14,7 +14,7 @@
         }
     }
 
-        .beneficios-grid {
+    .beneficios-grid {
         grid-template-columns: 1fr 1fr !important;
     }
 }
@@ -212,7 +212,7 @@
             height: auto;
         }
     }
-    
+
     .beneficios-grid {
         margin-bottom: 20px;
     }
@@ -266,9 +266,11 @@
             }
         }
     }
+
     .lead {
         font-size: 14px;
     }
+
     .fw-bold {
         font-size: 24px;
     }
@@ -457,6 +459,19 @@
         svg {
             width: 30px;
             height: 30px;
+        }
+    }
+
+    .ubicacion-box {
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+        p {
+            font-size: 16px;
+        }
+        h3 {
+            font-size: 20px;
         }
     }
 }
@@ -683,7 +698,7 @@
     }
 
     .beneficios-grid {
-    margin-bottom: 0px;
+        margin-bottom: 0px;
     }
 
     .fw-bold {
