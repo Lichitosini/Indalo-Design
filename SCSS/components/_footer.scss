@@ -2,20 +2,25 @@ footer {
     background-color: #272524;
     text-align: center;
     width: 100%;
+
     div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+
         a {
-        color: #b6a999;
+            color: #b6a999;
+            margin-bottom: 10px;
+
             &:hover {
                 color: #ffffff;
             }
         }
     }
+
     p {
-    color: #b6a999;
-    font-size: 14px;
+        color: #b6a999;
+        font-size: 14px;
     }
 }

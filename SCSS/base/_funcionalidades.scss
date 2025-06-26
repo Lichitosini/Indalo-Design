@@ -1,1 +1,11 @@
+@mixin imagen-bordeada($radius: 10px, $border-color: $color-texto-oscuro) {
+    border: solid 2px $border-color;
+    border-radius: $radius;
+    object-fit: cover;
+}
 
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

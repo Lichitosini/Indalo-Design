@@ -5,11 +5,13 @@
         place-items: center;
         gap: 10px;
     }
+
     .card {
         width: 16rem !important;
-    p {
-        font-size: 16px;
-    }
+
+        p {
+            font-size: 16px;
+        }
     }
 }
 
@@ -21,46 +23,119 @@
             }
         }
     }
+
     .card {
         width: 15rem !important;
+
         p {
             font-size: 15px;
         }
     }
+
+    .texto-about {
+        p {
+            font-size: 15px;
+        }
+
+        ul {
+            li {
+                font-size: 15px;
+            }
+        }
+    }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
     .card {
         width: 14rem !important;
+
         p {
             font-size: 14px;
         }
     }
-}
-@media screen and (max-width: 985px) {
-    .beneficios-grid {
+
+    .fotos-about {
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+}
+
+@media screen and (max-width: 984px) {
+    .beneficios-grid {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
     }
 }
 
 @media screen and (max-width: 960px) {
     .card {
         width: 13rem !important;
+
         p {
             font-size: 13px;
+        }
+    }
+
+    .texto-about {
+        p {
+            font-size: 14px;
+        }
+
+        ul {
+            li {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 909px) {
+    .img-contenedor {
+        img {
+            width: 70%;
+        }
+    }
+
+    .texto-about {
+        text-align: center;
+
+        p {
+            margin: 10px;
+            font-size: 12.5px;
         }
     }
 }
 
 @media (max-width: 900px) {
-    .imagenes-galeria img {
-        width: calc(50% - 1rem) !important;
+    .imagenes-galeria {
+        img {
+            width: calc(50% - 1rem);
+        }
+    }
+    .bienvenida {
+        h1 {
+            font-size: 35px;
+        }
+
+        h2 {
+            font-size: 25px;
+        }
+    }
+    .carrousel {
+        h3 {
+            font-size: 30px;
+        }
     }
 }
 
 @media screen and (max-width: 890px) {
+    .productos {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
     .card {
-        width: 12rem !important;
+        width: 19rem !important;
+
         p {
             font-size: 14px;
         }
@@ -75,23 +150,67 @@
 
 @media screen and (max-width: 850px) {
     .card {
-        width: 11rem !important;
+        width: 18rem !important;
     }
+
     .galeria-section {
         h1 {
             font-size: 28px;
         }
+
         p {
             font-size: 16px;
+        }
+    }
+
+    .beneficios {
+        h2 {
+            font-size: 28px;
         }
     }
 }
 
 @media screen and (max-width: 780px) {
     .card {
-        width: 10rem !important;
+        width: 16rem !important;
+
         p {
             font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contenido-about {
+        flex-direction: column;
+    }
+
+    .encabezado-about {
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .texto-about {
+        flex: 1 1 230px;
+        font-size: 1rem;
+    }
+
+    .img-contenedor {
+        text-align: center;
+        flex: 1 1 100px;
+    }
+
+    .fotos-about {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        img {
+            height: auto;
         }
     }
 }
@@ -100,33 +219,62 @@
     .contenido div p {
         font-size: 14px;
     }
-        .productos {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important;
-        grid-template-rows: repeat(2, 1fr) !important;
-        place-items: center;
-        gap: 20px;
-    }
+
     .card {
         width: 15rem !important;
+
         p {
             font-size: 13px;
         }
     }
+
     .galeria-section {
         p {
             font-size: 14px;
         }
     }
+
+    .bienvenida {
+        h1 {
+            font-size: 35px;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+    }
+    .carrousel {
+        h3 {
+            font-size: 22px;
+        }
+    }
 }
 
+@media screen and (max-width: 700px) {
+    .texto-about {
+        p {
+            font-size: 13px;
+        }
+
+        ul {
+            li {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 650px) {
-    .galeria-section  {
+    .galeria-section {
         h1 {
             font-size: 30px;
         }
-        p {
-            font-size: 18px;
+    }
+    footer {
+        svg {
+            width: 40px;
+            height: 40px;
         }
     }
 }
@@ -136,8 +284,15 @@
         h3 {
             font-size: 25px;
         }
+
         img {
             width: 25%;
+        }
+    }
+
+    .imagenes-galeria {
+        img {
+            width: 100%;
         }
     }
 }
@@ -150,6 +305,7 @@
             }
         }
     }
+
     nav {
         ul {
             li {
@@ -159,37 +315,92 @@
             }
         }
     }
+
     .fotos-galeria {
         img {
             height: 20rem;
         }
     }
+
     .productos {
         display: grid;
         grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .card {
+        width: 14rem !important;
+    }
+
+    .galeria-section {
+        h1 {
+            font-size: 28px;
         }
-        .card {
-            width: 13rem !important;
+
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .img-contenedor {
+        img {
+            width: 90%;
         }
-        .galeria-section {
-            h1 {
-                font-size: 28px;
-            }
-            p {
-                font-size: 15px !important;
+    }
+    .encabezado-about {
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .beneficio-card {
+        height: 18vh;
+        width: 20vh;
+
+        h3 {
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+
+    .texto-about {
+        p {
+            font-size: 12px;
+        }
+
+        ul {
+            li {
+                font-size: 12px;
             }
         }
     }
+
+}
 
 @media screen and (max-width: 500px) {
     .bienvenida {
         h1 {
             font-size: 30px;
         }
+
         h2 {
-            font-size: 15px;
+            font-size: 20px;
         }
     }
+
+    .carrousel {
+        h3 {
+            font-size: 20px;
+        }
+    }
+
     .contenido {
         div {
             p {
@@ -197,6 +408,7 @@
             }
         }
     }
+
     nav {
         ul {
             li {
@@ -206,16 +418,34 @@
             }
         }
     }
+
     .fotos {
         h3 {
             font-size: 20px;
         }
+
         img {
             width: 20%;
         }
     }
+
+    .productos {
+        grid-template-columns: 1fr !important;
+    }
+
     .card {
-        width: 11rem !important;
+        width: 17rem !important;
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    footer {
+        svg {
+            width: 30px;
+            height: 30px;
+        }
     }
 }
 
@@ -224,30 +454,50 @@
         display: grid;
         grid-template-columns: 1fr 1fr !important;
     }
+
     .beneficio-card {
         padding: 1rem;
+
         h3 {
-        font-size: 1rem;
+            font-size: 1rem;
         }
+
         p {
-        font-size: 0.9rem;
+            font-size: 0.9rem;
         }
     }
-    .imagenes-galeria img {
-        width: 12rem !important;
+}
+
+
+@media (max-width: 480px) {
+    .fotos-about {
+        gap: 5px;
+        margin: 5px;
+
+        img {
+            border-radius: 5px;
+            border-width: 1px;
+        }
     }
 }
 
 @media screen and (max-width: 464px) {
     .card {
-        width: 10rem !important;
+        width: 16rem !important;
+
+        p {
+            font-size: 13px;
+        }
     }
-    .imagenes-galeria img {
-        width: 11rem !important;
+
+    .beneficios {
+        h2 {
+            font-size: 24px;
+        }
     }
 }
 
-@media screen and (max-width: 450px) { 
+@media screen and (max-width: 450px) {
     nav {
         ul {
             li {
@@ -257,29 +507,42 @@
             }
         }
     }
-    .hero-about {
-        font-size: 13px;
+
+    footer {
+        p {
+            font-size: 10px;
+        }
     }
 }
 
 
 @media screen and (max-width: 432px) {
     .card {
-        width: 11rem !important;
+        width: 15rem !important;
+
         p {
             font-size: 12px;
         }
     }
+
     .bienvenida {
         h1 {
             font-size: 35px !important;
         }
+
         h2 {
             font-size: 22px !important;
-        }   
+        }
     }
-        .imagenes-galeria img {
-        width: 10rem !important;
+
+    .contacto {
+        h1 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 12px;
+        }
     }
 }
 
@@ -288,6 +551,25 @@
         display: grid;
         grid-template-columns: 1fr 1fr !important;
     }
+
+    .texto-about {
+        p {
+            font-size: 12px;
+        }
+
+        ul {
+            li {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .img-contenedor {
+        img {
+            width: 100%;
+        }
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -298,27 +580,60 @@
             }
         }
     }
+
     .bienvenida {
         h1 {
             font-size: 25px !important;
         }
+
         h2 {
-        font-size: 16px !important;
+            font-size: 16px !important;
         }
     }
-    .hero-about {
-        font-size: 11px !important;
+
+    .carrousel {
+        h3 {
+            font-size: 16px;
+        }
     }
-    .imagenes-galeria img {
-        width: calc(50% - 0.5rem) !important;
+
+    .beneficios-grid {
+        grid-template-columns: 1fr !important;
+        gap: 5px;
+        margin-top: 15px;
+    }
+
+    .beneficio-card {
+        width: 80% !important;
+        height: 85% !important;
+        padding: 0.5rem;
+
+        h3 {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+
+    .encabezado-about {
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+        }
     }
 }
 
 @media screen and (max-width: 372px) {
     .card {
-        width: 10rem !important;
+        width: 14rem !important;
+
         p {
-        font-size: 11px;
+            font-size: 11px;
         }
     }
 }
@@ -331,30 +646,33 @@
             }
         }
     }
+
     .bienvenida {
         h1 {
             font-size: 20px;
         }
+
         h2 {
             font-size: 16px;
         }
     }
-        .imagenes-galeria img {
-        width: 8rem !important;
-    }
+
 }
 
 @media screen and (max-width: 360px) {
     .card {
-        width: 9rem !important;
+        width: 13rem !important;
+
         p {
-        font-size: 10px;
+            font-size: 12px;
         }
     }
+
     .bienvenida {
         h1 {
             font-size: 18px !important;
         }
+
         h2 {
             font-size: 14px !important;
         }
@@ -362,10 +680,13 @@
 }
 
 @media screen and (max-width: 336px) {
-    .imagenes-galeria {
-        padding: 0;
-        img {
-        width: 7rem !important;
+    .contacto {
+        h1 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 11px;
         }
     }
 }
@@ -374,6 +695,7 @@
     #formulario {
         grid-template-columns: 1fr;
     }
+
     label,
     textarea,
     input[type="submit"],
