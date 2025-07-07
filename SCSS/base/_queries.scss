@@ -101,6 +101,25 @@
             font-size: 12.5px;
         }
     }
+
+    .servicios {
+        h2 {
+            font-size: 25px;
+            margin-bottom: 0;
+        }
+
+        ul {
+            li {
+                h3 {
+                    font-size: 22px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 900px) {
@@ -121,8 +140,12 @@
     }
 
     .carrousel {
-        h3 {
+        h2 {
             font-size: 30px;
+        }
+
+        .carrousel-items {
+            height: 300px !important;
         }
     }
 }
@@ -153,7 +176,7 @@
     }
 
     .galeria-section {
-        h1 {
+        h2 {
             font-size: 28px;
         }
 
@@ -165,6 +188,26 @@
     .beneficios {
         h2 {
             font-size: 28px;
+        }
+    }
+}
+
+@media screen and (max-width: 806px) {
+    .servicios {
+        h2 {
+            font-size: 25px;
+        }
+
+        ul {
+            li {
+                h3 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
@@ -248,7 +291,7 @@
     }
 
     .carrousel {
-        h3 {
+        h2 {
             font-size: 22px;
         }
     }
@@ -290,11 +333,29 @@
             height: 40px;
         }
     }
+
+    .servicios {
+        h2 {
+            font-size: 22px;
+        }
+
+        ul {
+            li {
+                h3 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 605px) {
     .fotos {
-        h3 {
+        h2 {
             font-size: 25px;
         }
 
@@ -410,7 +471,7 @@
     }
 
     .carrousel {
-        h3 {
+        h2 {
             font-size: 20px;
         }
     }
@@ -434,7 +495,7 @@
     }
 
     .fotos {
-        h3 {
+        h2 {
             font-size: 20px;
         }
 
@@ -467,11 +528,13 @@
             width: 40px;
             height: 40px;
         }
+
         p {
-            font-size: 16px;
+            font-size: 13px;
         }
-        h3 {
-            font-size: 20px;
+
+        h2 {
+            font-size: 24px;
         }
     }
 }
@@ -559,7 +622,7 @@
     }
 
     .contacto {
-        h1 {
+        h2 {
             font-size: 20px;
         }
 
@@ -589,6 +652,17 @@
         }
     }
 
+    .ubicacion-box {
+
+        p {
+            font-size: 12px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -611,7 +685,7 @@
     }
 
     .carrousel {
-        h3 {
+        h2 {
             font-size: 16px;
         }
     }
@@ -676,6 +750,13 @@
         }
     }
 
+    .hero-overlay {
+        padding: 10px;
+    }
+
+    .beneficios {
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -714,12 +795,12 @@
 
 @media screen and (max-width: 336px) {
     .contacto {
-        h1 {
-            font-size: 18px;
+        h2 {
+            font-size: 20px;
         }
 
         p {
-            font-size: 11px;
+            font-size: 14px;
         }
     }
 }

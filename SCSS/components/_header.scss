@@ -1,26 +1,39 @@
 header {
-    background-color: #272524;
+    @include color-theme(background-color, primary);
     align-items: center;
 }
 
+nav.navbar,
+.navbar.navbar-expand-lg {
+    @include color-theme(background-color, primary, true);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
 .navbar {
-    background-color: #272524 !important;
-}
+    @include color-theme(color, secondary, true);
 
-nav div ul li a {
-    color: #b6a999 !important;
-}
-
-.navbar-brand {
-    color: #b6a999;
-}
-
-.navlink {
-    color: #b6a999;
+    &:hover {
+        @include color-theme(color, text-light, true);
+    }
 }
 
 .navbar-toggler {
-    background-color: #b6a999 !important;
+    @include color-theme(background-color, secondary, true);
+}
+
+
+.dropdown-menu {
+    @include color-theme(background-color, primary, true);
+    border: none;
+
+    a {
+        @include color-theme(color, secondary, true);
+
+        &:hover {
+            @include color-theme(color, primary, true);
+        }
+    }
 }
 
 .bienvenida {

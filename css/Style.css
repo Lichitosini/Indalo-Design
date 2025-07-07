@@ -15,24 +15,35 @@ header {
   align-items: center;
 }
 
-.navbar {
+nav.navbar,
+.navbar.navbar-expand-lg {
   background-color: #272524 !important;
 }
 
-nav div ul li a {
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar {
   color: #b6a999 !important;
 }
-
-.navbar-brand {
-  color: #b6a999;
-}
-
-.navlink {
-  color: #b6a999;
+.navbar .navbar-brand:hover,
+.navbar .nav-link:hover,
+.navbar:hover {
+  color: #ffffff !important;
 }
 
 .navbar-toggler {
   background-color: #b6a999 !important;
+}
+
+.dropdown-menu {
+  background-color: #272524 !important;
+  border: none;
+}
+.dropdown-menu a {
+  color: #b6a999 !important;
+}
+.dropdown-menu a:hover {
+  color: #272524 !important;
 }
 
 .bienvenida {
@@ -86,9 +97,9 @@ nav div ul li a {
   background-color: rgba(39, 37, 36, 0.6352941176);
   display: inline-block;
   font-size: 2rem;
-  padding: 0 10px;
+  padding: 10px;
   margin-bottom: 0;
-  color: #ffffff;
+  color: #ffffff !important;
   border-radius: 10px;
 }
 
@@ -157,11 +168,23 @@ nav div ul li a {
   cursor: pointer;
   transition: 0.3s ease;
 }
-
-.boton:hover {
-  background-color: #b6a999;
+.btn:hover {
+  background-color: rgb(65.52, 62.16, 60.48);
   color: white;
-  transition: 0.3s ease;
+}
+
+.container-formulario {
+  padding: 20px;
+}
+.container-formulario h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #272524;
+}
+.container-formulario p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #272524;
 }
 
 #formulario {
@@ -172,7 +195,8 @@ nav div ul li a {
   margin: auto;
   padding: 30px;
   background-color: #272524;
-  color: #ffffff;
+  color: #ffffff !important;
+  border-radius: 10px;
 }
 #formulario input[type=name],
 #formulario input[type=email],
@@ -183,14 +207,14 @@ nav div ul li a {
   border: none;
   grid-column: span 2;
   background-color: #3a3937;
-  color: white;
+  color: #ffffff !important;
 }
 #formulario input[type=text] {
   width: 100%;
   padding: 10px;
   border: none;
   background-color: #3a3937;
-  color: white;
+  color: #ffffff !important;
 }
 #formulario label {
   grid-column: span 2;
@@ -205,13 +229,13 @@ nav div ul li a {
 #formulario input[type=submit] {
   grid-column: span 2;
   padding: 12px;
-  background-color: #4caf50;
+  background-color: #b6a999;
   border: none;
-  color: white;
+  color: #272524;
   cursor: pointer;
 }
 #formulario input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #ffffff;
 }
 
 .terminos {
@@ -227,6 +251,18 @@ nav div ul li a {
   align-items: center;
   flex-direction: column;
   padding: 20px;
+}
+.contacto h2 {
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+  color: #272524;
+}
+.contacto p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 5px;
 }
 
 .map-section {
@@ -255,9 +291,13 @@ nav div ul li a {
   flex-direction: column;
   padding: 20px;
 }
-.servicios h3 {
-  font-size: 2rem;
+.servicios h2 {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #272524;
+  color: #b6a999;
 }
 .servicios p {
   font-size: 1.2rem;
@@ -266,22 +306,24 @@ nav div ul li a {
 .servicios ul {
   list-style: none;
   text-align: center;
+  padding: 0;
 }
-.servicios ul li h4 {
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
-  color: #b6a999;
+.servicios ul li h3 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  border-radius: 10px;
   background-color: #272524;
+  color: #b6a999;
 }
 
-.carrousel h3 {
+.carrousel h2 {
   height: 50px;
-  color: #b6a999;
   font-size: 35px;
-  background-color: #272524;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #272524;
+  color: #b6a999;
 }
 
 .fotos-about {
@@ -330,12 +372,12 @@ nav div ul li a {
 .galeria-section {
   text-align: center;
 }
-.galeria-section h1 {
-  background-color: rgba(39, 37, 36, 0.7411764706);
-  margin-top: 10px;
+.galeria-section h2 {
+  background-color: #272524;
   color: #b6a999;
+  margin-top: 10px;
   display: inline-block;
-  padding: 0 15px;
+  padding: 5px 15px;
   border-radius: 10px;
 }
 .galeria-section p {
@@ -430,25 +472,25 @@ nav div ul li a {
 
 .ubicacion-texto {
   flex: 1 1 300px;
-  text-align: left;
+  text-align: center;
 }
 
 .ubicacion-texto i {
   font-size: 40px;
-  color: #d8d2ca;
+  color: #b6a999;
   margin-bottom: 10px;
   display: inline-block;
 }
 
-.ubicacion-texto h3 {
+.ubicacion-texto h2 {
   font-size: 28px;
   margin-bottom: 10px;
-  color: #d8d2ca;
+  color: #b6a999;
 }
 
 .ubicacion-texto p {
   font-size: 16px;
-  color: #d8d2ca;
+  color: #b6a999;
   margin: 0;
 }
 
@@ -486,6 +528,7 @@ footer div a:hover {
 footer p {
   color: #b6a999;
   font-size: 14px;
+  padding: 10px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -559,6 +602,16 @@ footer p {
     margin: 10px;
     font-size: 12.5px;
   }
+  .servicios h2 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+  .servicios ul li h3 {
+    font-size: 22px;
+  }
+  .servicios ul li p {
+    font-size: 16px;
+  }
 }
 @media (max-width: 900px) {
   .imagenes-galeria img {
@@ -570,8 +623,11 @@ footer p {
   .bienvenida h2 {
     font-size: 25px;
   }
-  .carrousel h3 {
+  .carrousel h2 {
     font-size: 30px;
+  }
+  .carrousel .carrousel-items {
+    height: 300px !important;
   }
 }
 @media screen and (max-width: 890px) {
@@ -594,7 +650,7 @@ footer p {
   .card {
     width: 18rem !important;
   }
-  .galeria-section h1 {
+  .galeria-section h2 {
     font-size: 28px;
   }
   .galeria-section p {
@@ -602,6 +658,17 @@ footer p {
   }
   .beneficios h2 {
     font-size: 28px;
+  }
+}
+@media screen and (max-width: 806px) {
+  .servicios h2 {
+    font-size: 25px;
+  }
+  .servicios ul li h3 {
+    font-size: 20px;
+  }
+  .servicios ul li p {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 780px) {
@@ -660,7 +727,7 @@ footer p {
   .bienvenida h2 {
     font-size: 22px;
   }
-  .carrousel h3 {
+  .carrousel h2 {
     font-size: 22px;
   }
 }
@@ -686,9 +753,18 @@ footer p {
     width: 40px;
     height: 40px;
   }
+  .servicios h2 {
+    font-size: 22px;
+  }
+  .servicios ul li h3 {
+    font-size: 18px;
+  }
+  .servicios ul li p {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 605px) {
-  .fotos h3 {
+  .fotos h2 {
     font-size: 25px;
   }
   .fotos img {
@@ -755,7 +831,7 @@ footer p {
   .bienvenida h2 {
     font-size: 20px;
   }
-  .carrousel h3 {
+  .carrousel h2 {
     font-size: 20px;
   }
   .contenido div p {
@@ -764,7 +840,7 @@ footer p {
   nav ul li a {
     font-size: 16px;
   }
-  .fotos h3 {
+  .fotos h2 {
     font-size: 20px;
   }
   .fotos img {
@@ -788,10 +864,10 @@ footer p {
     height: 40px;
   }
   .ubicacion-box p {
-    font-size: 16px;
+    font-size: 13px;
   }
-  .ubicacion-box h3 {
-    font-size: 20px;
+  .ubicacion-box h2 {
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 496px) {
@@ -847,7 +923,7 @@ footer p {
   .bienvenida h2 {
     font-size: 22px !important;
   }
-  .contacto h1 {
+  .contacto h2 {
     font-size: 20px;
   }
   .contacto p {
@@ -864,6 +940,12 @@ footer p {
   .img-contenedor img {
     width: 100%;
   }
+  .ubicacion-box p {
+    font-size: 12px;
+  }
+  .ubicacion-box h2 {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 400px) {
   .contenido div p {
@@ -875,7 +957,7 @@ footer p {
   .bienvenida h2 {
     font-size: 16px !important;
   }
-  .carrousel h3 {
+  .carrousel h2 {
     font-size: 16px;
   }
   .beneficios-grid {
@@ -919,6 +1001,12 @@ footer p {
   .bienvenida h2 {
     font-size: 16px;
   }
+  .hero-overlay {
+    padding: 10px;
+  }
+  .beneficios {
+    margin-top: 10px;
+  }
 }
 @media screen and (max-width: 360px) {
   .card {
@@ -944,11 +1032,11 @@ footer p {
   }
 }
 @media screen and (max-width: 336px) {
-  .contacto h1 {
-    font-size: 18px;
+  .contacto h2 {
+    font-size: 20px;
   }
   .contacto p {
-    font-size: 11px;
+    font-size: 14px;
   }
 }
 @media (max-width: 600px) {

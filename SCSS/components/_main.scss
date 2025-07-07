@@ -18,13 +18,13 @@
 }
 
 .bg-highlight {
-    background-color: #b6a999;
+    @include color-theme(background-color, secondary);
     color: #272524;
     padding: 4px 10px;
     border-radius: 6px;
 }
 
-.beneficios{
+.beneficios {
     margin-top: 40px;
     text-align: center;
     display: flex;
@@ -37,9 +37,9 @@
         background-color: #272524a2;
         display: inline-block;
         font-size: 2rem;
-        padding: 0 10px;
+        padding: 10px;
         margin-bottom: 0;
-        color: #ffffff;
+        @include color-theme(color, text-light, true);
         border-radius: 10px;
     }
 }
@@ -53,7 +53,7 @@
     height: 100%;
     margin: 20px auto;
     place-items: center;
-}   
+}
 
 .beneficio-card {
     background: white;
@@ -105,21 +105,23 @@
     text-align: center;
 }
 
-
 .btn {
-    background-color: #272524;
-    color: #b6a999;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: 0.3s ease;
+    @include boton(#272524, #b6a999);
 }
 
-.boton {
-    &:hover {
-        background-color: #b6a999;
-        color: white;
-        transition: 0.3s ease;
+.container-formulario {
+    padding: 20px;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        @include color-theme(color, primary);
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+        @include color-theme(color, primary);
     }
 }
 
@@ -130,8 +132,9 @@
     max-width: 800px;
     margin: auto;
     padding: 30px;
-    background-color: #272524;
-    color: #ffffff;
+    @include color-theme(background-color, primary);
+    @include color-theme(color, text-light, true);
+    border-radius: 10px;
 
     input[type="name"],
     input[type="email"],
@@ -142,7 +145,7 @@
         border: none;
         grid-column: span 2;
         background-color: #3a3937;
-        color: white;
+        @include color-theme(color, text-light, true);
     }
 
     input[type="text"] {
@@ -150,7 +153,7 @@
         padding: 10px;
         border: none;
         background-color: #3a3937;
-        color: white;
+        @include color-theme(color, text-light, true);
     }
 
     label {
@@ -168,13 +171,13 @@
     input[type="submit"] {
         grid-column: span 2;
         padding: 12px;
-        background-color: #4caf50;
+        @include color-theme(background-color, secondary);
         border: none;
-        color: white;
+        @include color-theme(color, primary);
         cursor: pointer;
 
         &:hover {
-            background-color: #45a049;
+            @include color-theme(background-color, text-light);
         }
     }
 }
@@ -190,6 +193,20 @@
     @include flex-center;
     flex-direction: column;
     padding: 20px;
+
+    h2 {
+        font-size: 2rem;
+        padding: 10px;
+        border-radius: 10px;
+        @include color-theme(color, primary);
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
 }
 
 .map-section {
@@ -218,9 +235,13 @@
     flex-direction: column;
     padding: 20px;
 
-    h3 {
-        font-size: 2rem;
+    h2 {
+        font-size: 2.5rem;
         margin-bottom: 1rem;
+        padding: 10px;
+        border-radius: 10px;
+        @include color-theme(background-color, primary);
+        @include color-theme(color, secondary);
     }
 
     p {
@@ -231,23 +252,25 @@
     ul {
         list-style: none;
         text-align: center;
+        padding: 0;
 
-        li h4 {
-            font-size: 1.5rem;
-            margin-top: 0.5rem;
-            color: #b6a999;
-            background-color: #272524;
+        li h3 {
+            font-size: 2rem;
+            margin-top: 1.5rem;
+            border-radius: 10px;
+            @include color-theme(background-color, primary);
+            @include color-theme(color, secondary);
         }
     }
 }
 
 .carrousel {
-    h3 {
+    h2 {
         height: 50px;
-        color: #b6a999;
         font-size: 35px;
-        background-color: #272524;
         @include flex-center;
+        @include color-theme(background-color, primary);
+        @include color-theme(color, secondary);
     }
 }
 
@@ -296,12 +319,12 @@
 .galeria-section {
     text-align: center;
 
-    h1 {
-        background-color: #272524bd;
+    h2 {
+        @include color-theme(background-color, primary);
+        @include color-theme(color, secondary);
         margin-top: 10px;
-        color: #b6a999;
         display: inline-block;
-        padding: 0 15px;
+        padding: 5px 15px;
         border-radius: 10px;
     }
 
@@ -388,7 +411,7 @@
 }
 
 .ubicacion-section {
-    background-color: #b6a999;
+    @include color-theme(background-color, secondary);
     padding: 60px 20px;
 }
 
@@ -406,25 +429,25 @@
 
 .ubicacion-texto {
     flex: 1 1 300px;
-    text-align: left;
+    text-align: center;
 }
 
 .ubicacion-texto i {
     font-size: 40px;
-    color: #d8d2ca;
+    @include color-theme(color, secondary);
     margin-bottom: 10px;
     display: inline-block;
 }
 
-.ubicacion-texto h3 {
+.ubicacion-texto h2 {
     font-size: 28px;
     margin-bottom: 10px;
-    color: #d8d2ca;
+    @include color-theme(color, secondary);
 }
 
 .ubicacion-texto p {
     font-size: 16px;
-    color: #d8d2ca;
+    @include color-theme(color, secondary);
     margin: 0;
 }
 

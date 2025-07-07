@@ -1,3 +1,9 @@
+$colors: (
+    primary: #272524,
+    secondary: #b6a999,
+    text-light: #ffffff
+);
+
 @mixin imagen-bordeada($radius: 10px, $border-color: $color-texto-oscuro) {
     border: solid 2px $border-color;
     border-radius: $radius;
@@ -8,4 +14,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin boton($bg, $color) {
+    background-color: $bg;
+    color: $color;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover {
+        background-color: lighten($bg, 10%);
+        color: white;
+    }
+}
+
+@mixin color-theme($property, $color-name, $important: false) {
+    @if $important {
+        #{$property}: map-get($colors, $color-name) !important;
+    }
+
+    @else {
+        #{$property}: map-get($colors, $color-name);
+    }
 }
