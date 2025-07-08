@@ -15,6 +15,14 @@
     padding: 80px 20px;
     display: flex;
     align-items: center;
+
+    h2 {
+    @include color-theme(color, text-light);
+    }
+
+    p {
+    @include color-theme(color, text-light);
+    }
 }
 
 .bg-highlight {
@@ -48,7 +56,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
+    gap: 5rem;
     max-width: 1500px;
     height: 100%;
     margin: 20px auto;
@@ -72,12 +80,12 @@
     h3 {
         font-size: 1.2rem;
         margin-bottom: 0.8rem;
-        color: #1f1f1f;
+        @include color-theme(color, primary, true);
     }
 
     p {
         font-size: 1rem;
-        color: #555;
+        @include color-theme(color, primary, true);
     }
 }
 
@@ -98,11 +106,13 @@
 
 .card-title {
     text-align: center;
+    @include color-theme(color, primary);
 }
 
 .card-text {
     flex-grow: 1;
     text-align: center;
+    @include color-theme(color, primary);
 }
 
 .btn {
@@ -170,14 +180,14 @@
 
     input[type="submit"] {
         grid-column: span 2;
-        padding: 12px;
-        @include color-theme(background-color, secondary);
-        border: none;
-        @include color-theme(color, primary);
+        place-self: center;
+        @include boton(#b6a999, #272524);
         cursor: pointer;
+        width: 90px;
+        border-radius: 5px;
 
         &:hover {
-            @include color-theme(background-color, text-light);
+            @include color-theme(color, text-light);
         }
     }
 }
@@ -192,7 +202,7 @@
 .contacto {
     @include flex-center;
     flex-direction: column;
-    padding: 20px;
+    padding: 25px;
 
     h2 {
         font-size: 2rem;
@@ -204,8 +214,12 @@
     p {
         font-size: 1rem;
         text-align: center;
-        padding: 10px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+        @include color-theme(color, primary);
+    }
+
+    a {
+        margin-bottom: 10px;
     }
 }
 
@@ -247,6 +261,7 @@
     p {
         font-size: 1.2rem;
         text-align: center;
+        @include color-theme(color, primary);
     }
 
     ul {
@@ -271,6 +286,10 @@
         @include flex-center;
         @include color-theme(background-color, primary);
         @include color-theme(color, secondary);
+    }
+
+    img {
+        height: 550px !important;
     }
 }
 
@@ -332,6 +351,7 @@
         padding: 10px;
         font-size: 16px;
         margin: 0;
+        @include color-theme(color, primary);
     }
 }
 
@@ -340,7 +360,7 @@
     border-radius: 20px;
     padding: 60px 20px;
     margin: 20px;
-    color: #d8d2ca;
+    @include color-theme(color, text-light);
 }
 
 .contenedor-about {
@@ -355,12 +375,12 @@
     h2 {
         font-size: 2.5rem;
         margin-bottom: 10px;
-        color: #d8d2ca;
+        @include color-theme(color, text-light);
     }
 
     p {
         font-size: 1.2rem;
-        color: #d8d2ca;
+        @include color-theme(color, text-light);
     }
 }
 
@@ -396,7 +416,7 @@
         li {
             margin-bottom: 10px;
             font-size: 1.05rem;
-            color: #d8d2ca;
+            @include color-theme(color, text-light);
 
             &:before {
                 content: "✔️";
@@ -406,7 +426,7 @@
     }
 
     strong {
-        color: #f0f0f0e0;
+        @include color-theme(color, text-light);
     }
 }
 

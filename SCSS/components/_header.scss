@@ -41,11 +41,17 @@ nav.navbar,
 
     h1 {
         font-size: 45px;
-        color: #b6a999;
+        @include color-theme(color, secondary);
     }
 
     h2 {
         font-size: 30px;
-        color: #b6a999;
+        @include color-theme(color, secondary);
+    }
+}
+
+.inicio {
+    img {
+        width: 50px;
     }
 }

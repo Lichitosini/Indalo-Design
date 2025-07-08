@@ -58,6 +58,10 @@ nav.navbar,
   color: #b6a999;
 }
 
+.inicio img {
+  width: 50px;
+}
+
 .hero-indalo {
   background-image: url(../multimedia/fondo-pagina.jpg);
   background-size: cover;
@@ -75,6 +79,12 @@ nav.navbar,
   padding: 80px 20px;
   display: flex;
   align-items: center;
+}
+.hero-overlay h2 {
+  color: #ffffff;
+}
+.hero-overlay p {
+  color: #ffffff;
 }
 
 .bg-highlight {
@@ -107,7 +117,7 @@ nav.navbar,
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
+  gap: 5rem;
   max-width: 1500px;
   height: 100%;
   margin: 20px auto;
@@ -130,11 +140,11 @@ nav.navbar,
 .beneficio-card h3 {
   font-size: 1.2rem;
   margin-bottom: 0.8rem;
-  color: #1f1f1f;
+  color: #272524 !important;
 }
 .beneficio-card p {
   font-size: 1rem;
-  color: #555;
+  color: #272524 !important;
 }
 
 .productos {
@@ -153,11 +163,13 @@ nav.navbar,
 
 .card-title {
   text-align: center;
+  color: #272524;
 }
 
 .card-text {
   flex-grow: 1;
   text-align: center;
+  color: #272524;
 }
 
 .btn {
@@ -228,14 +240,23 @@ nav.navbar,
 }
 #formulario input[type=submit] {
   grid-column: span 2;
-  padding: 12px;
+  place-self: center;
   background-color: #b6a999;
-  border: none;
   color: #272524;
+  border: none;
+  padding: 10px 20px;
   cursor: pointer;
+  transition: 0.3s ease;
+  cursor: pointer;
+  width: 90px;
+  border-radius: 5px;
 }
 #formulario input[type=submit]:hover {
-  background-color: #ffffff;
+  background-color: rgb(203.2742857143, 194.0628571429, 182.7257142857);
+  color: white;
+}
+#formulario input[type=submit]:hover {
+  color: #ffffff;
 }
 
 .terminos {
@@ -250,7 +271,7 @@ nav.navbar,
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 25px;
 }
 .contacto h2 {
   font-size: 2rem;
@@ -261,8 +282,11 @@ nav.navbar,
 .contacto p {
   font-size: 1rem;
   text-align: center;
-  padding: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  color: #272524;
+}
+.contacto a {
+  margin-bottom: 10px;
 }
 
 .map-section {
@@ -302,6 +326,7 @@ nav.navbar,
 .servicios p {
   font-size: 1.2rem;
   text-align: center;
+  color: #272524;
 }
 .servicios ul {
   list-style: none;
@@ -324,6 +349,9 @@ nav.navbar,
   align-items: center;
   background-color: #272524;
   color: #b6a999;
+}
+.carrousel img {
+  height: 550px !important;
 }
 
 .fotos-about {
@@ -384,6 +412,7 @@ nav.navbar,
   padding: 10px;
   font-size: 16px;
   margin: 0;
+  color: #272524;
 }
 
 .sobre-nosotros {
@@ -391,7 +420,7 @@ nav.navbar,
   border-radius: 20px;
   padding: 60px 20px;
   margin: 20px;
-  color: #d8d2ca;
+  color: #ffffff;
 }
 
 .contenedor-about {
@@ -406,11 +435,11 @@ nav.navbar,
 .encabezado-about h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #d8d2ca;
+  color: #ffffff;
 }
 .encabezado-about p {
   font-size: 1.2rem;
-  color: #d8d2ca;
+  color: #ffffff;
 }
 
 .contenido-about {
@@ -443,14 +472,14 @@ nav.navbar,
 .texto-about ul li {
   margin-bottom: 10px;
   font-size: 1.05rem;
-  color: #d8d2ca;
+  color: #ffffff;
 }
 .texto-about ul li:before {
   content: "✔️";
   margin-right: 8px;
 }
 .texto-about strong {
-  color: rgba(240, 240, 240, 0.8784313725);
+  color: #ffffff;
 }
 
 .ubicacion-section {
@@ -546,6 +575,7 @@ footer p {
   }
   .beneficios-grid {
     grid-template-columns: 1fr 1fr !important;
+    gap: 2.5rem;
   }
 }
 @media screen and (max-width: 1106px) {
@@ -575,6 +605,9 @@ footer p {
   .fotos-about {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
+  }
+  .carrousel img {
+    height: 400px !important;
   }
 }
 @media screen and (max-width: 960px) {
@@ -625,9 +658,6 @@ footer p {
   }
   .carrousel h2 {
     font-size: 30px;
-  }
-  .carrousel .carrousel-items {
-    height: 300px !important;
   }
 }
 @media screen and (max-width: 890px) {
@@ -805,6 +835,12 @@ footer p {
   .encabezado-about p {
     font-size: 14px;
   }
+  .contacto h2 {
+    font-size: 24px;
+  }
+  .contacto p {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 535px) {
   .beneficio-card {
@@ -901,6 +937,9 @@ footer p {
   .beneficios h2 {
     font-size: 24px;
   }
+  .carrousel img {
+    height: 350px !important;
+  }
 }
 @media screen and (max-width: 450px) {
   nav ul li a {
@@ -908,6 +947,9 @@ footer p {
   }
   footer p {
     font-size: 10px;
+  }
+  .servicios img {
+    height: 500px;
   }
 }
 @media screen and (max-width: 432px) {

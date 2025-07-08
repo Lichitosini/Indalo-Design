@@ -1,5 +1,5 @@
 footer {
-    background-color: #272524;
+    @include color-theme(background-color, primary);
     text-align: center;
     width: 100%;
 
@@ -10,7 +10,7 @@ footer {
         list-style: none;
 
         a {
-            color: #b6a999;
+            @include color-theme(color, secondary);
             margin-bottom: 10px;
 
             &:hover {
@@ -20,7 +20,7 @@ footer {
     }
 
     p {
-        color: #b6a999;
+        @include color-theme(color, secondary);
         font-size: 14px;
         padding: 10px;
     }

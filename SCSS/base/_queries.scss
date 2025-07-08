@@ -16,6 +16,7 @@
 
     .beneficios-grid {
         grid-template-columns: 1fr 1fr !important;
+        gap: 2.5rem;
     }
 }
 
@@ -61,6 +62,12 @@
     .fotos-about {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
+    }
+
+    .carrousel {
+        img {
+            height: 400px !important;
+        }
     }
 }
 
@@ -142,10 +149,6 @@
     .carrousel {
         h2 {
             font-size: 30px;
-        }
-
-        .carrousel-items {
-            height: 300px !important;
         }
     }
 }
@@ -429,6 +432,16 @@
             font-size: 14px;
         }
     }
+
+    .contacto {
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
 }
 
 @media screen and (max-width: 535px) {
@@ -581,6 +594,12 @@
             font-size: 24px;
         }
     }
+
+    .carrousel {
+        img {
+            height: 350px !important;
+        }
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -597,6 +616,12 @@
     footer {
         p {
             font-size: 10px;
+        }
+    }
+
+    .servicios {
+        img {
+            height: 500px;
         }
     }
 }
