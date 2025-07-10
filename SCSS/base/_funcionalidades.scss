@@ -1,7 +1,8 @@
 $colors: (
     primary: #272524,
     secondary: #b6a999,
-    text-light: #ffffff
+    text-light: #ffffff,
+    ov-dark: #272524b4
 );
 
 @mixin imagen-bordeada($radius: 10px, $border-color: $color-texto-oscuro) {

@@ -356,7 +356,7 @@
 }
 
 .sobre-nosotros {
-    background-color: #272524b4;
+    @include color-theme(background-color, ov-dark);
     border-radius: 20px;
     padding: 60px 20px;
     margin: 20px;
@@ -436,7 +436,7 @@
 }
 
 .ubicacion-box {
-    background-color: #272524b4;
+    @include color-theme(background-color, ov-dark);
     border-radius: 12px;
     padding: 40px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -462,12 +462,12 @@
 .ubicacion-texto h2 {
     font-size: 28px;
     margin-bottom: 10px;
-    @include color-theme(color, secondary);
+    @include color-theme(color, text-light);
 }
 
 .ubicacion-texto p {
     font-size: 16px;
-    @include color-theme(color, secondary);
+    @include color-theme(color, text-light);
     margin: 0;
 }
 

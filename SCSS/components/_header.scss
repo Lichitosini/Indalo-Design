@@ -41,6 +41,7 @@ nav.navbar,
 
     h1 {
         font-size: 45px;
+        padding: 10px;
         @include color-theme(color, secondary);
     }
 
